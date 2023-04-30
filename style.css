@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  min-height: 100vh;
+  background-color: hsl(217, 54%, 11%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Outfit", sans-serif;
+}
+
+/* containers */
+
+.container {
+  position: absolute;
+  border-radius: 32px;
+  padding: 0 1.25rem 3rem;
+  background-color: hsl(214, 54%, 10%);
+}
+
+/* card */
+
+.card {
+  background-color: hsl(216, 50%, 16%);
+  color: hsl(215, 51%, 70%);
+  max-width: 375px;
+  border-radius: 8px;
+  padding: 1.5rem;
+}
+
+.img-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.img-container img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.hover-img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 99%;
+  width: 100%;
+  background-color: hsl(178, 100%, 50%, 0.4);
+  border-radius: 8px;
+  display: none;
+}
+
+.hover-img img {
+  position: absolute;
+  width: 50px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.text h1 {
+  font-size: 1.5rem;
+  margin: 1rem 0;
+}
+
+.text h1,
+.attr span {
+  color: #fff;
+  cursor: pointer;
+}
+
+.text p {
+  font-size: 18px;
+  font-weight: lighter;
+}
+
+.subtext {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5rem 0;
+}
+
+.subtext div {
+  display: flex;
+  align-items: center;
+  column-gap: 5px;
+}
+
+.eth img {
+  width: 10px;
+  height: 16px;
+}
+
+.time img {
+  width: 20px;
+  height: 20px;
+}
+
+.eth {
+  color: hsl(178, 100%, 50%);
+}
+
+hr {
+  border: 1px solid hsl(215, 32%, 27%);
+}
+
+.attr {
+  display: flex;
+  align-items: center;
+  padding: 1rem 0 0.5rem;
+}
+
+.attr img {
+  border-radius: 50%;
+  border: 1px solid #fff;
+  width: 32px;
+}
+
+.attr p {
+  margin-left: 1rem;
+}
+
+.text h1:hover,
+.attr span:hover {
+  color: hsl(178, 100%, 50%);
+}
+
+.img-container:hover .hover-img {
+  display: block;
+}
+
+@media screen and (max-width: 375px) {
+  .container {
+    margin: 0 0.5rem;
+  }
+}
